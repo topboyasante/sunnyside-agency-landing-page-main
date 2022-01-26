@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+//General
+.hero{
+    color: white;
+    height: 100vh;
+    background: url(/images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    h1{
+        font-family: 'Fraunces', serif;
+        font-size: 4em;
+        margin-top: 2.5em;
+    }
+    .flex-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 2em;
+        p{
+            font-weight: bolder;
+            font-family: 'Fraunces', serif;
+        }
+        li{
+            float: right;
+            list-style-type: none;
+            padding: 0em 1em;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Barlow', sans-serif;
+            color: white;
+    
+            &:hover{
+                font-family: 'Fraunces', serif;
+                color: black;
+                border: 1px solid white;
+                border-radius: 20px;
+                background: white;
+                padding: 0.2em;
+            }
+        }
+    }
+}
+
+.flex-box-1{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 48.8vw;
+    }
+    .flex-text{
+        padding: 10em;
+        font-family: 'Fraunces', serif;
+    }
+}
+.flex-box-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    img{
+        width: 50vw;
+    }
+    .flex-text{
+        padding: 10em;
+        font-family: 'Fraunces', serif;
+    }
+}
+
+//Mobile
+@media screen and(max-width:450px) {
+   a{
+       font-size: 0.9em;
+   }
+}
+.text-center{
+    text-align: center;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
